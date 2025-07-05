@@ -1,4 +1,8 @@
-
+.btn-theme-primary{
+    background-color: rgb(229, 9, 20)!important;
+    color: white!important;
+    padding: 4px 12px!important;
+}
 
 .header{
     position: relative;
@@ -23,6 +27,92 @@
     z-index: 2;
 }
 
+.header .form-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px!important;
+    height: 680px!important;
+    padding: 0px 40px 60px 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.header .form-wrapper h5{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header .form-wrapper .form-title{
+    color: white; 
+}
+
+.header .form-wrapper .form-control{
+    width: 370px!important;
+    height: 60px!important;   
+    background-color: rgba(0, 0, 0, 0.65);
+    border:1px solid rgb(255, 255, 255,0.3);
+    color: white;
+}
+
+.header .form-wrapper .form-control::placeholder{
+    color: rgb(255, 255, 255,0.78);
+}
+
+.header .form-wrapper .login-btn{
+    width: 370px!important;
+    height: 40px!important; 
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header .form-wrapper p{
+    text-align: center;
+}
+
+.header .form-wrapper p a{
+    color: white;
+}
+
+.header .form-wrapper .remember-me{
+    display: flex;
+    align-items: center;
+}
+
+.header .form-wrapper .remember-me .remember-me-checkbox{
+    width: 18px;
+    height: 18px;
+}
+
+.header .form-wrapper .remember-me label{
+    color: white;
+}
+
+.header .form-wrapper .new-to-netflix{
+    color: white;
+    text-align: start;
+    color: rgb(255, 255, 255,0.58)
+}
+
+.header .form-wrapper .bot-text{
+    font-size: 13px;
+    text-align: start;
+    color: rgb(255, 255, 255,0.48)
+}
+
+.header .form-wrapper .learn-more{
+    font-size: 13px;
+}
+
+.header .form-wrapper .hidden-text{
+    font-size: 13px;
+    color: rgb(255, 255, 255,0.48);
+    text-align: start;
+    display: none;
+}
+
 .footer .footer-wrapper{
     padding: 80px 120px 100px 160px;
     background-color: rgb(22, 21, 21);
@@ -31,6 +121,11 @@
 .footer .footer-wrapper h5{
     font-size: 15px;
     color: rgb(255, 255, 255,0.78);
+}
+
+.footer .footer-wrapper h5 a{
+    color: rgb(255, 255, 255,0.78);
+    text-decoration: none;
 }
 
 .footer .footer-wrapper .footer-inner{
@@ -49,3 +144,184 @@
     font-size: 13px;
     color: rgb(255, 255, 255,0.78);
 }
+
+/* Responsive Design - Tablet (768px and below) */
+/* @media (max-width: 768px) {
+    .header .netflix-logo{
+        width: 120px;
+        top: 2%;
+        left: 5%;
+    }
+    
+    .header .form-wrapper{
+        width: 220px;
+        height: 320px;
+        padding: 15px 20px 20px 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header .form-wrapper .form-control,
+    .header .form-wrapper .login-btn{
+        width: 150px;
+        height: 40px;
+    }
+    
+    .header .form-wrapper .form-title{
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem !important;
+    }
+    
+    .header .form-wrapper .remember-me,
+    .header .form-wrapper .bot-text , .header .form-wrapper .learn-more, .header .form-wrapper .forgot-password, .header .form-wrapper .new-to-netflix{
+        display: none;
+    }
+    
+    .footer .footer-wrapper{
+        padding: 40px 30px 60px 30px;
+    }
+    
+    .footer .footer-wrapper .footer-inner{
+        flex-direction: column;
+        padding-right: 0;
+        gap: 15px;
+    }
+    
+    .footer .footer-wrapper .footer-inner ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header .footer-wrapper .footer-inner ul li{
+        margin-left: 0;
+    }
+} */
+
+/* Responsive Design - Mobile (480px and below) */
+/* @media (max-width: 480px) {
+    .header .netflix-logo{
+        width: 100px;
+        top: 1%;
+        left: 3%;
+    }
+    
+    .header .form-wrapper{
+        width: 60%;
+        max-width: 180px;
+        height: 100%;
+        min-height: 200px;
+        padding: 12px 15px 15px 15px;
+        margin: 5px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header .form-wrapper .form-control,
+    .header .form-wrapper .login-btn{
+        width: 100%;
+        max-width: 220px;
+        height: 38px;
+    }
+    
+    .header .form-wrapper .form-title{
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem !important;
+    }
+    
+    .header .form-wrapper .remember-me{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+    
+    .header .form-wrapper .new-to-netflix,
+    .header .form-wrapper .bot-text{
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .footer .footer-wrapper{
+        padding: 25px 15px 40px 15px;
+    }
+    
+    .footer .footer-wrapper h5{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .footer .footer-wrapper .footer-inner{
+        text-align: center;
+    }
+    
+    .footer .footer-wrapper .footer-inner ul li a{
+        font-size: 10px;
+    }
+} */
+
+
+/* Responsive Design - Medium Desktop/Laptop (769px to 1199px) */
+/* @media (min-width: 769px) and (max-width: 1199px) {
+    .header .netflix-logo{
+        width: 140px;
+        top: 2.5%;
+        left: 8%;
+    }
+    
+    .header .form-wrapper{
+        width: 300px;
+        height: 400px;
+        padding: 25px 35px 40px 35px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header .form-wrapper .form-control,
+    .header .form-wrapper .login-btn{
+        width: 220px;
+        height: 48px;
+    }
+    
+    .header .form-wrapper .form-title{
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem !important;
+    }
+    
+    
+    
+    .header .form-wrapper .new-to-netflix,
+    .header .form-wrapper .bot-text, .header .form-wrapper .remember-me{
+       display: none;
+    }
+    
+    .footer .footer-wrapper{
+        padding: 70px 80px 90px 120px;
+    }
+    
+    .footer .footer-wrapper .footer-inner{
+        padding-right: 150px;
+    }
+} */
+
+/* Responsive Design - Large Desktop (1200px and above) */
+/* @media (min-width: 1200px)  {
+    .header .form-wrapper{
+        width: 500px;
+        height: 550px;
+        padding: 0px 50px 70px 50px;
+    }
+    
+    .header .form-wrapper .form-control,
+    .header .form-wrapper .login-btn{
+        width: 400px;
+        height: 55px;
+    }
+    
+    .footer .footer-wrapper{
+        padding: 100px 160px 120px 200px;
+    }
+}
+
+
+ */ 
