@@ -1,0 +1,666 @@
+
+
+.btn-theme-primary{
+    background-color: rgb(229, 9, 20)!important;
+    color: white!important;
+    padding: 4px 12px!important;
+}
+
+/* header  */
+.header .header-wrapper{
+    position: relative;
+    width: 1520px;
+}
+
+
+.header .header-wrapper img{
+    width: 1520px;
+    height: 730px;
+}
+
+.header .header-wrapper .top-bar{
+    position: absolute;
+    top: 0%;
+    left: 9.5%;
+    transform: translateY(-44%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 1000px;
+}
+
+.header .header-wrapper .top-bar img{
+    width: 150px;
+}
+
+.header .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:100%;
+    height: 730px;
+    /* height:1080px; */
+}
+
+.header .header-wrapper .header-subscription .inner-header-subscription{
+    position:absolute;
+    color: white;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    text-align: center;
+  max-width: 700px;
+  width: 90%;
+}
+
+.inner-header-subscription h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.inner-header-subscription h4 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.inner-header-subscription .email-input{
+   background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  padding: 16px;
+  font-size: 1rem;
+  width: 85%;
+  height: 100%;
+  margin-left: 78px;
+  
+}
+
+.inner-header-subscription .email-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.inner-header-subscription button{
+    border-radius: 5%;
+    margin: 0px;
+    padding:15px 20px!important;
+    font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-header-subscription button svg{
+    width: 24px;
+    margin-left: 12px;
+}
+
+.inner-header-subscription button svg path{
+    fill: white;
+} 
+
+
+.curve{
+  height: 3.5px;
+  width: 100%;
+  background-color: rgba(0, 0, 0,0.7);
+  margin-bottom: 0!important
+}
+
+/* trending now section */
+.trending-now{
+  overflow: hidden; /* avoid viewport overflow */
+  background-color: rgba(0, 0, 0, 0.98);
+}
+
+.trending-now .trending-wrapper{
+  padding: 50px  ;
+  margin-left: 30px;
+  margin-right: 5px;
+  overflow-x: hidden;
+}
+
+.trending-now .trending-wrapper h3{
+  color: white;
+}
+
+
+.trending-now .trending-wrapper .carousel-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+  padding: 10px 0 10px 60px; /* added left padding to allow icon 1 */
+}
+
+.trending-now .trending-wrapper .carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
+.trending-now .trending-wrapper .carousel-wrapper .card-wrapper{
+  display: flex;
+  gap:45px;
+  flex-wrap: nowrap;
+  width: max-content; /* Prevent stretching the viewport */
+  padding-right: 60px;
+}
+
+.trending-now .trending-wrapper .carousel-wrapper .card-wrapper .each-card-wrapper{
+  position: relative;
+   flex: 0 0 auto; /* Prevent wrapping */
+
+}
+
+.trending-now .trending-wrapper .carousel-wrapper .card-wrapper .each-card-wrapper .card{
+  width: 200px;
+  height: 250px!important;
+  background-color: #222;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* smooth shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 4px;
+  overflow: hidden;
+  border: none;
+}
+
+.trending-now .trending-wrapper .carousel-wrapper .card-wrapper .each-card-wrapper .card:hover{
+    transform: scale(1.065); 
+    cursor: pointer;
+    /* controls size of hover */
+    /* didnt change width coz it was changing alignment */
+}
+
+
+.trending-now .trending-wrapper .carousel-wrapper .card-wrapper .each-card-wrapper .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trending-now .trending-wrapper .carousel-wrapper .card-wrapper .each-card-wrapper .icon-overlay{
+  position: absolute;
+  top: 50%;
+  left: -20%;
+}
+.trending-now .trending-wrapper .carousel-wrapper .card-wrapper .each-card-wrapper .icon-overlay img{
+  width: 100px;
+}
+
+/* reasons section */
+.reasons-wrapper{
+  background-color: black;
+  padding-left: 30px;
+}
+
+.reasons-wrapper .reasons-header{
+  color: white;
+}
+
+.reasons-wrapper .reasons-inner {
+  margin-left: 10px;
+}
+
+.reasons-wrapper .reasons-inner .reasons-card {
+  background-color: rgb(18, 4, 36);
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 16px;
+  width: 300px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.reasons-wrapper .reasons-inner .reasons-card h4{
+  color: white;
+}
+
+.reasons-wrapper .reasons-inner .reasons-card p{
+  color: rgb(162, 160, 160);
+}
+
+.reasons-wrapper .reasons-inner .reasons-card img{
+  width: 60px;
+  align-self: flex-end; /* pushes image to the right */
+  margin-top: auto;      /* pushes image to the bottom */
+}
+
+/* faq section */
+.faq .faq-wrapper{
+  padding:70px 70px 20px 70px;
+  background-color: black;
+}
+
+.faq .faq-wrapper h3{
+  color: white;
+}
+
+.faq .faq-wrapper .accordion{
+  width: 1265px;
+  margin-left: 10px;
+}
+
+.faq .faq-wrapper .accordion .accordion-item {
+  border: none; /* remove item border */
+}
+
+.faq .faq-wrapper .accordion .accordion-item .accordion-button {
+  background-color: rgb(38, 38, 38);
+  color: white;
+  padding: 30px;
+  font-size: 25px;
+  font-weight: 250px;
+  border: 2px solid black;
+  
+}
+
+.faq .faq-wrapper .accordion .accordion-button:focus {
+    outline: none;
+  box-shadow: none;
+}
+
+.faq .faq-wrapper .accordion .accordion-button:not(.collapsed) {
+   background-color: rgb(38, 38, 38);
+  color: white;
+  box-shadow: none;
+  /* inside of accrodian item */
+}
+
+.faq .faq-wrapper .accordion .accordion-button::after {
+  content: '+';
+  font-size: 60px;
+  color: white;
+  transform: none;
+  background-image: none; /* Remove Bootstrap's default arrow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq .faq-wrapper .accordion .accordion-button:not(.collapsed)::after {
+  content: '×'; /* cross icon when open */
+  color: white;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.faq .faq-wrapper  .accordion .accordion-body{
+  background-color:rgb(38, 38, 38);
+  color: white;
+  font-size: 25px;
+  font-weight: 250px;
+}
+
+/* membership section */
+.membership-wrapper{
+  background-color: black;
+  text-align: center;
+  padding: 60px !important;
+}
+
+.membership-wrapper p{
+  color: white;
+  font-size: 17px;
+  font-weight: 100px;
+  margin-bottom: 20px;  
+}
+
+.membership-wrapper .email-input{
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  padding: 16px;
+  width: 70%!important;
+  margin-left: 260px !important;
+} 
+
+.membership-wrapper  .email-input::placeholder{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.membership-wrapper .button-wrapper{
+  border-radius: 5px;
+    margin: 0px;
+    padding:17px 20px!important;
+    font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px !important;
+}
+
+.membership-wrapper .button-wrapper svg{
+  width: 24px;
+  margin-left: 16px;
+}
+
+.membership-wrapper .button-wrapper svg path{
+  fill: white;
+}
+
+.footer-wrapper {
+  background-color: #000000;
+  height: 500px;
+}
+
+.footer-wrapper .footer-inner{
+  padding: 0px 150px;
+}
+
+.footer-wrapper .footer-inner a{
+  color:rgb(211, 211, 211,0.9);
+}
+
+.footer-wrapper .footer-inner p{
+  color:rgb(211, 211, 211,0.9);
+}
+
+.footer-wrapper .footer-inner .bot-detection-text{
+  font-size: 12px;
+  color:rgba(188, 188, 188, 0.9);
+}
+
+.footer-wrapper .footer-inner .bot-detection-text a{
+  color: rgb(88, 88, 238);
+}
+
+.footer-wrapper .footer-inner .bot-detection-text-onclick{
+  display: none;
+  font-size: 12px;
+  color:rgba(188, 188, 188, 0.9);
+}
+
+.footer-wrapper .footer-inner .bot-detection-text-onclick a{
+  color: rgb(88, 88, 238);
+}
+
+
+.footer-wrapper .footer-inner .footer-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap:150px;
+  margin-left: -175px;
+}
+
+.footer-wrapper .footer-inner .footer-links ul{
+  list-style: none;
+
+}
+
+.footer-wrapper .footer-inner .footer-links ul li{
+  margin-bottom: 10px;
+}
+
+.dropdown .dropdown-button{
+  margin-bottom: 55px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.dropdown .dropdown-button:hover{
+  background-color: black;
+
+}
+
+.dropdown .dropdown-button img{
+  width: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .card {
+    width: 180px;
+    height: 230px;
+  }
+
+  .icon-overlay img {
+    width: 80px;
+  }
+
+  .carousel-wrapper {
+    padding-left: 40px;
+  }
+
+  .card-wrapper {
+    gap: 30px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 160px;
+    height: 220px;
+  }
+
+  .icon-overlay img {
+    width: 70px;
+  }
+
+  .carousel-wrapper {
+    padding-left: 30px;
+  }
+
+  .card-wrapper {
+    gap: 25px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 140px;
+    height: 200px;
+  }
+
+  .icon-overlay img {
+    width: 60px;
+  }
+
+  .carousel-wrapper {
+    padding-left: 20px;
+  }
+
+  .card-wrapper {
+    gap: 20px;
+    padding-right: 20px;
+  }
+
+  .trending-wrapper {
+    padding: 30px 15px;
+    margin: 0;
+  }
+
+  .trending-wrapper h3 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 120px;
+    height: 180px;
+  }
+
+  .icon-overlay img {
+    width: 50px;
+  }
+
+  .carousel-wrapper {
+    padding-left: 10px;
+  }
+
+  .card-wrapper {
+    gap: 15px;
+    padding-right: 10px;
+  }
+
+  .trending-wrapper {
+    padding: 20px 10px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .header .header-wrapper {
+    width: 100%;
+  }
+
+  .header .header-wrapper img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+  }
+
+  .header .overlay {
+    height: 650px;
+  }
+
+  .header .header-wrapper .top-bar {
+    left: 5%;
+    gap: 500px;
+  }
+
+  .header .header-wrapper .top-bar img{
+    width: 100px;
+  }
+
+
+  .inner-header-subscription h1 {
+    font-size: 2.8rem;
+  }
+
+  .inner-header-subscription h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .header .header-wrapper img {
+    height: 580px;
+  }
+
+  .header .overlay {
+    height: 580px;
+  }
+
+  .header .header-wrapper .top-bar {
+    gap: 300px;
+    transform: translateY(-50%);
+  }
+
+
+  .inner-header-subscription h1 {
+    font-size: 2.5rem;
+  }
+
+  .inner-header-subscription h4 {
+    font-size: 1rem;
+  }
+
+  .inner-header-subscription .email-input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .inner-header-subscription form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inner-header-subscription button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header-wrapper img {
+    height: 500px;
+  }
+
+  .header .overlay {
+    height: 500px;
+  }
+
+  .header .header-wrapper .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    left: 5%;
+    transform: translateY(0%);
+  }
+
+  .header .header-wrapper .top-bar img {
+    width: 120px;
+  }
+
+  .inner-header-subscription h1 {
+    font-size: 2rem;
+  }
+
+  .inner-header-subscription h4 {
+    font-size: 0.95rem;
+  }
+
+  .inner-header-subscription {
+    top: 45%;
+    transform: translate(-50%, -5%);
+  }
+}
+
+@media (max-width: 576px) {
+  .header .header-wrapper img {
+    height: 420px;
+  }
+
+  .header .overlay {
+    height: 420px;
+  }
+
+  .inner-header-subscription h1 {
+    font-size: 1.6rem;
+  }
+
+  .inner-header-subscription h4 {
+    font-size: 0.9rem;
+  }
+
+  .inner-header-subscription p {
+    font-size: 0.9rem;
+  }
+
+  .inner-header-subscription button {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+  }
+}
+
+

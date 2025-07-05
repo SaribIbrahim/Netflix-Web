@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-wrapper">
+            <img src="assets/imgs/banner-overlay.jpg" alt="">
+            <div class="top-bar">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo"
+                    width="200">
+                <button class="btn btn-theme-primary">Sign In</button>
+            </div><!-- /.top-bar -->
+            <div class="header-subscription">
+                <div class="container">
+                    <div class="inner-header-subscription">
+                        <h1 class="mb-3"><strong>Unlimited Movies, TV <br> shows , and more</strong></h1>
+                        <h4 class="mb-4">Starts at Rs 250. Cancel anytime.</h4>
+                        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                        <form class="row g-2 g-md-3 d-flex align-items-center" id="membership-form-1">
+                            <div class="col-md-8 mx-0">
+                                <input type="email" class="email-input" id="email-1" placeholder="Email Address">
+                            </div>
+                            <div class="col-md-4 mx-0 ">
+                                <button type="button" class="btn btn-theme-primary" onclick="formValidation1()">Get Started
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div><!-- /.inner-header-subscription -->
+                </div>
+            </div><!-- /.header-subscription -->
+        </div><!-- /.header-wrapper -->
+        <div class="overlay">
+        </div><!-- /.overlay -->
+
+        <div class="curve">
+        </div> <!-- /.curve -->
+
+
+    </header><!-- /.header -->
+
+    <main class="main">
+        <section class="trending-now">
+            <div class="trending-wrapper">
+                <h3 class="ms-5 mb-3 ">Trending Now</h3>
+                <div class="carousel-wrapper">
+                    <div class="card-wrapper">
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/1.jpg" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/one-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/2.webp" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/two-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/3.jpg" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/three-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/4.jpg" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/four-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/5.jpg" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/five-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/6.webp" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/six-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/7.webp" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/seven-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/8.jpg" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/eight-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                        <div class="each-card-wrapper">
+                            <div class="card">
+                                <img src="assets/imgs/9.jpg" alt="">
+                            </div><!-- /.card -->
+                            <div class="icon-overlay">
+                                <img src="assets/imgs/nine-svgrepo-com (1).svg" alt="">
+                            </div>
+                        </div><!-- /.each-card-wrapper -->
+                    </div><!-- /.card-wrapper -->
+                </div> <!-- /.carousel-wrapper -->
+            </div><!-- /.trending-wrapper -->
+        </section> <!-- /.trending-now -->
+
+        <section class="more-reasons">
+            <div class="reasons-wrapper">
+                <div class="container">
+                    <h3 class="mb-3 reasons-header">More Reason to Join</h3>
+                    <div class="reasons-inner">
+                        <div class="row me-0">
+                            <div class="col-md-6 reasons-card">
+                                <h4 class="mb-3">Enjoy on your TV</h4>
+                                <p class="mb-5">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+                                    players, and more.
+                                </p>
+                                <img src="assets/imgs/icons/monitor-svgrepo-com.svg" alt="">
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-6 reasons-card">
+                                <h4 class="mb-3">Download your shows to watch offline</h4>
+                                <p class="mb-5">Save your favorites easily and always have something to watch
+                                </p>
+                                <img src="assets/imgs/icons/download-square-svgrepo-com.svg" alt="">
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-6 reasons-card">
+                                <h4 class="mb-3">Watch everywhere</h4>
+                                <p class="mb-5">Watch everywhere
+                                    Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV. </p>
+                                <img src="assets/imgs/icons/nautical-monocular-svgrepo-com.svg" alt="">
+                            </div><!-- /.col-md-3 -->
+                            <div class="col-md-6 reasons-card">
+                                <h4 class="mb-3">Create profiles for kids</h4>
+                                <p class="mb-5">Send kids on adventures with their favorite characters in a space made
+                                    just for them — free with your membership.
+                                </p>
+                                <img src="assets/imgs/icons/profile-favorite-1333-svgrepo-com.svg" alt="">
+                            </div><!-- /.col-md-3 -->
+                        </div><!-- /.row -->
+                    </div> <!-- /.reasons-inner -->
+                </div><!-- /.container -->
+            </div><!-- /.reasons-wrapper -->
+        </section><!-- /.more-reasons -->
+
+        <section class="faq">
+            <div class="faq-wrapper">
+                <div class="container">
+                    <h3 class="mb-4">Frequently Asked Questions</h3>
+                    <div class="row">
+                        <div class="accordion" id="faqAccordian">
+                            <div class="accordion-item mb-1">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Netflix?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#faqAccordian">
+                                    <div class="accordion-body">
+                                        Netflix is a streaming service that offers a wide variety of award-winning TV
+                                        shows, movies, anime,
+                                        documentaries, and
+                                        more on thousands of internet-connected devices.
+
+                                        You can watch as much as you want, whenever you want without a single commercial
+                                        – all for one low
+                                        monthly price.
+                                        There's always something new to discover and new TV shows and movies are added
+                                        every week!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-1">
+                                <h2 class="accordion-header ">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How much does Netflix cost?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordian">
+                                    <div class="accordion-body">
+                                        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device,
+                                        all for one fixed
+                                        monthly fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no
+                                        contracts.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-1">
+                                <h2 class="accordion-header ">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Where can I watch?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordian">
+                                    <div class="accordion-body">
+                                        Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on
+                                        the web at
+                                        netflix.com from your
+                                        personal computer or on any internet-connected device that offers the Netflix
+                                        app, including smart
+                                        TVs, smartphones,
+                                        tablets, streaming media players and game consoles.
+
+                                        You can also download your favorite shows with the iOS or Android app. Use
+                                        downloads to watch while
+                                        you're on the go and
+                                        without an internet connection. Take Netflix with you anywhere.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-1">
+                                <h2 class="accordion-header ">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        What can I watch on Netflix?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordian">
+                                    <div class="accordion-body">
+                                        Netflix has an extensive library of feature films, documentaries, TV shows,
+                                        anime, award-winning
+                                        Netflix originals, and more. Watch as much as you want, anytime you want.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-1">
+                                <h2 class="accordion-header ">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        How do I cancel?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordian">
+                                    <div class="accordion-body">
+                                        Netflix is flexible. There are no pesky contracts and no commitments. You can
+                                        easily cancel your
+                                        account online in two clicks. There are no cancellation fees – start or stop
+                                        your account anytime.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                </div> <!-- /.container -->
+            </div><!-- /.faq-wrapper -->
+        </section><!-- /.faq -->
+
+        <section class="membership">
+            <div class="membership-wrapper">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <form class="row d-flex align-items-center g-0" id="membership-form-2">
+                    <div class="col-md-8 px-0">
+                        <input type="email" class="email-input" id="email-2" placeholder="Email Address">
+                    </div>
+                    <div class="col-md-4 px-0">
+                        <button type="button" class="btn btn-theme-primary button-wrapper  " onclick="formValidation2()">Get Started
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+            </div> <!-- /.membership-wrapper -->
+        </section><!-- /.membership -->
+
+    </main> <!-- /.main -->
+
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-inner">
+                <a href="">Questions? Contact us.</a>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Speed Test</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href=""> Jobs</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                        <li><a href="">Legal Notices</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Ways to Watch</a></li>
+                        <li><a href="">Corporate Information</a></li>
+                        <li><a href="">Only on Netflix</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Media Center</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href=""> Contact Us</a></li>
+                        <li><a href="">Netflix Originals</a></li>
+                    </ul>
+
+                </div><!-- /.footer-links -->
+
+                <div class="dropdown mt-5">
+                    <button class=" dropdown-button btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/imgs/icons/language-svgrepo-com.svg" alt="">
+                      English
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">English</a></li>
+                    </ul>
+                </div>
+                <p class="mb-4">Netflix Pakistan</p>
+                <p class="bot-detection-text">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a id="anchor-tag" href="#" onclick="botDetectionTextOnclick(); return false;">Learn More</a> </p>
+                <div class="bot-detection-text-onclick" id="bot-detection-text-onclick">The information collected by Google reCAPTCHA is subject to the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</div>
+
+            </div><!-- /.footer-inner -->
+        </div>
+    </footer><!-- /.footer -->
+
+
+
+
+
+
+
+
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+         crossorigin="anonymous"></script>
+     <script src="assets/js/main.js"></script> 
+
+</body>
+
+</html>
