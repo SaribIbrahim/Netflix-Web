@@ -9,13 +9,15 @@ function botDetectionTextOnclick(){
 function formValidation1(){
         let emailInput = document.getElementById("email-1");
         let form = document.getElementById("membership-form-1");
+        let successToast = document.getElementById("successToast");
+        let Toast = new bootstrap.Toast(successToast);
 
         if(emailInput.value === "" || emailInput.value === null){
             alert("Please enter your email address");
             return false;
         }
-        
-        alert("Membership form submitted successfully");
+
+        Toast.show();
         form.reset(); // Reset the form after successful submission
         return false; // Prevent form submission and page refresh
 }
@@ -23,13 +25,16 @@ function formValidation1(){
 function formValidation2(){
         let emailInput = document.getElementById("email-2");
         let form = document.getElementById("membership-form-2");
+        let successToast = document.getElementById("successToast");
+        let Toast = new bootstrap.Toast(successToast);
 
         if(emailInput.value === "" || emailInput.value === null){
             alert("Please enter your email address");
             return false;// wont proceed to the next line if conditon is true
         }
+
+        Toast.show();
         
-        alert("Membership form submitted successfully");
         form.reset(); // Reset the form after successful submission
         return false; // Prevent form submission and page refresh
 }

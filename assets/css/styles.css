@@ -425,7 +425,15 @@
 }
 
 
+.toast-container{
+  left: 50%;
+  transform: translateX(-50%);
+} 
 
+.toast-container .toast-header{
+  background-color: green;
+  color: white;
+}
 
 
 

@@ -145,6 +145,18 @@
     color: rgb(255, 255, 255,0.78);
 }
 
+.toast-container{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toast-container .toast-header{
+    background-color: green;
+    color: white;
+}
+
+
+
 /* Responsive Design - Tablet (768px and below) */
 /* @media (max-width: 768px) {
     .header .netflix-logo{
