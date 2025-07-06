@@ -78,7 +78,7 @@
     text-align: start;  
     color: red;
     font-size: 12px;
-}
+    }
 
 .header .form-wrapper .password-error{
     display: none;

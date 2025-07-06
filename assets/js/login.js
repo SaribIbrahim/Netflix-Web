@@ -10,8 +10,10 @@ function Login(){
 
     // Check if both fields are empty first
     if(email == "" && password == ""){
-        document.querySelector(".email-error").style.display = "block";
-        document.querySelector(".password-error").style.display = "block";
+        document.querySelector(".email-error p").textContent = "Please enter your email address";
+        document.querySelector(".email-error ").style.display = "block";
+        document.querySelector(".password-error p").textContent = "Please enter your password";
+        document.querySelector(".password-error ").style.display = "block";
         emailDiv.style.marginBottom = "2px";
         passwordDiv.style.marginBottom = "2px";
         return false;
@@ -19,16 +21,35 @@ function Login(){
 
     // Check individual fields
     if(email == "" || email == null){
+        document.querySelector(".email-error p").textContent = "Please enter your email address";
         document.querySelector(".email-error").style.display = "block";
         emailDiv.style.marginBottom = "2px";
         return false;
     }
 
     if(password == "" || password == null){
+        document.querySelector(".password-error p").textContent = "Please enter your password";
         document.querySelector(".password-error").style.display = "block";
         passwordDiv.style.marginBottom = "2px";
         return false;
     }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailPattern.test(email)){
+        document.querySelector(".email-error p").textContent = "Please enter a valid email address";
+        document.querySelector(".email-error").style.display = "block";
+        emailDiv.style.marginBottom = "2px";
+        return false;
+    }
+
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if(!passwordPattern.test(password)){
+        document.querySelector(".password-error p").textContent = "Please enter a valid password";
+        document.querySelector(".password-error").style.display = "block";
+        passwordDiv.style.marginBottom = "2px";
+        return false;
+    }
+
 
     Toast.show();
     return false;

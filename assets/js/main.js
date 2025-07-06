@@ -14,7 +14,7 @@ function formValidation1() {
   let Toast = new bootstrap.Toast(successToast);
 
   if (emailInput.value === "" || emailInput.value === null) {
-    document.querySelector(".email-error").textContent = "Please enter your email address";
+    document.querySelector(".email-error p").textContent = "Please enter your email address";
     document.querySelector(".email-error").style.display = "block";
     return false;
   }
@@ -24,7 +24,7 @@ function formValidation1() {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!emailPattern.test(emailInput.value)) {
-    document.querySelector(".email-error").textContent =
+    document.querySelector(".email-error p").textContent =
       "Please enter a valid email address.";
     document.querySelector(".email-error").style.display = "block";
     return false;
