@@ -61,6 +61,36 @@
     color: rgb(255, 255, 255,0.78);
 }
 
+.header .form-wrapper .login-email-div{
+    margin-bottom: 16px;
+}
+
+.header .form-wrapper .login-password-div{
+    margin-bottom: 16px;
+}
+
+.header .form-wrapper .email-error{
+    display: none;
+    margin-left: 10px;
+}
+
+.header .form-wrapper .email-error p{
+    text-align: start;  
+    color: red;
+    font-size: 12px;
+}
+
+.header .form-wrapper .password-error{
+    display: none;
+    margin-left: 10px;
+}
+
+.header .form-wrapper .password-error p{
+    text-align: start;  
+    color: red;
+    font-size: 12px;
+}
+
 .header .form-wrapper .login-btn{
     width: 370px!important;
     height: 40px!important; 
