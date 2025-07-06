@@ -13,14 +13,33 @@ function formValidation1(){
         let Toast = new bootstrap.Toast(successToast);
 
         if(emailInput.value === "" || emailInput.value === null){
-            alert("Please enter your email address");
+            document.querySelector(".email-error").style.display = "block";
             return false;
         }
+        
+        
 
         Toast.show();
         form.reset(); // Reset the form after successful submission
         return false; // Prevent form submission and page refresh
 }
+
+function hideEmailError(){
+    document.querySelector(".email-error").style.display = "none";
+}
+
+function hideEmailError1(){
+    document.querySelector(".email-errorr").style.display = "none";
+}
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    let email = document.getElementById("email-1");
+    email.addEventListener('input', hideEmailError);
+
+    let emaill = document.getElementById("email-2");
+    emaill.addEventListener('input', hideEmailError1);
+});
 
 function formValidation2(){
         let emailInput = document.getElementById("email-2");
@@ -29,7 +48,7 @@ function formValidation2(){
         let Toast = new bootstrap.Toast(successToast);
 
         if(emailInput.value === "" || emailInput.value === null){
-            alert("Please enter your email address");
+            document.querySelector(".email-errorr").style.display = "block";
             return false;// wont proceed to the next line if conditon is true
         }
 

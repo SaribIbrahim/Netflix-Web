@@ -84,6 +84,14 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.inner-header-subscription .email-error{
+  display: none;
+  color: red;
+  text-align: start;
+  margin-left: 85px;
+  margin-top: 2px;
+}
+
 .inner-header-subscription button{
     border-radius: 5%;
     margin: 0px;
@@ -351,6 +359,19 @@
 .membership-wrapper .button-wrapper svg path{
   fill: white;
 }
+
+.membership-wrapper .email-errorr{
+  display: none;
+}
+
+.membership-wrapper .email-errorr p{
+  color: red;
+  text-align: start;
+  font-size: 16px;
+  margin-left: 275px;
+  margin-top: 3px;
+}
+
 
 .footer-wrapper {
   background-color: #000000;
