@@ -362,14 +362,17 @@
 
 .membership-wrapper .email-errorr{
   display: none;
+  color: red;
+  text-align: start;
+  margin-left: 275px;
+  margin-top: 3px;
 }
 
 .membership-wrapper .email-errorr p{
   color: red;
   text-align: start;
   font-size: 16px;
-  margin-left: 275px;
-  margin-top: 3px;
+  margin: 0;
 }
 
 
